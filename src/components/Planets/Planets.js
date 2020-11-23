@@ -20,17 +20,18 @@ const Planets = ({ planets }) => {
     actions: [
       {
         label: 'Go to Films',
-        action: (row) => { console.log(`redirect to grid with ${row.films.length} Films`) }
+        path: 'films'
       },
       {
         label: 'Go to Residents',
-        action: (row) => { console.log(`redirect to grid with ${row.residents.length} Residents`) }
+        path: 'residents'
       }
     ]
   };
 
   return (
     <div className='App'>
+      <h1>Star Wars Planets</h1>
       <Grid data={data} />
     </div>
   )
